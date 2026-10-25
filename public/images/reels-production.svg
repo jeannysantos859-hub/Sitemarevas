@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="reels-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#064E3B"/>
+      <stop offset="50%" stopColor="#0B3E31"/>
+      <stop offset="100%" stopColor="#021C15"/>
+    </linearGradient>
+    <linearGradient id="screen-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#1E293B"/>
+      <stop offset="100%" stopColor="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="accent-green" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#10B981"/>
+      <stop offset="100%" stopColor="#047857"/>
+    </linearGradient>
+    <filter id="glow-rec">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#reels-bg)"/>
+
+  <!-- Studio softbox lighting arcs -->
+  <circle cx="160" cy="180" r="140" fill="#10B981" opacity="0.12" filter="url(#glow-rec)"/>
+  <circle cx="640" cy="420" r="180" fill="#34D399" opacity="0.08" filter="url(#glow-rec)"/>
+
+  <!-- Studio Grid backdrop -->
+  <line x1="0" y1="480" x2="800" y2="480" stroke="#2F5E4E" stroke-width="1" opacity="0.3"/>
+  <line x1="200" y1="480" x2="100" y2="600" stroke="#2F5E4E" stroke-width="1" opacity="0.3"/>
+  <line x1="400" y1="480" x2="400" y2="600" stroke="#2F5E4E" stroke-width="1" opacity="0.3"/>
+  <line x1="600" y1="480" x2="700" y2="600" stroke="#2F5E4E" stroke-width="1" opacity="0.3"/>
+
+  <!-- Gimbal & Smartphone in action -->
+  <g transform="translate(400, 290)">
+    <!-- Gimbal handle & base -->
+    <rect x="-18" y="110" width="36" height="150" rx="10" fill="#1E293B" stroke="#475569" stroke-width="2"/>
+    <circle cx="0" cy="150" r="14" fill="#334155"/>
+    <circle cx="0" cy="150" r="6" fill="#10B981"/>
+    <rect x="-8" y="180" width="16" height="40" rx="4" fill="#0F172A"/>
+
+    <!-- Gimbal Motor arm -->
+    <path d="M0 110 C 0 80, -45 60, -45 20 C -45 -10, -20 -30, 0 -30" fill="none" stroke="#334155" stroke-width="16" stroke-linecap="round"/>
+    <circle cx="-45" cy="20" r="16" fill="#1E293B" stroke="#475569" stroke-width="2"/>
+    <circle cx="-45" cy="20" r="6" fill="#10B981"/>
+
+    <!-- Smartphone Body (Vertical 9:16) -->
+    <rect x="-85" y="-180" width="170" height="310" rx="28" fill="#020617" stroke="#334155" stroke-width="4"/>
+    <!-- Phone Screen -->
+    <rect x="-75" y="-168" width="150" height="286" rx="20" fill="url(#screen-grad)"/>
+
+    <!-- Dynamic Waveform & Video Content in phone -->
+    <circle cx="0" cy="-30" r="42" fill="url(#accent-green)" opacity="0.2"/>
+    <polygon points="-8,-42 16,-30 -8,-18" fill="#10B981"/>
+
+    <!-- Recording indicator -->
+    <circle cx="-45" cy="-145" r="5" fill="#EF4444" filter="url(#glow-rec)"/>
+    <text x="-32" y="-140" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">REC 4K</text>
+    <text x="35" y="-140" font-family="monospace" font-size="11" fill="#94A3B8">00:15</text>
+
+    <!-- Framing Grid Lines on phone -->
+    <line x1="-25" y1="-168" x2="-25" y2="118" stroke="#FFFFFF" stroke-opacity="0.15" stroke-dasharray="3 3"/>
+    <line x1="25" y1="-168" x2="25" y2="118" stroke="#FFFFFF" stroke-opacity="0.15" stroke-dasharray="3 3"/>
+    <line x1="-75" y1="-70" x2="75" y2="-70" stroke="#FFFFFF" stroke-opacity="0.15" stroke-dasharray="3 3"/>
+    <line x1="-75" y1="10" x2="75" y2="10" stroke="#FFFFFF" stroke-opacity="0.15" stroke-dasharray="3 3"/>
+
+    <!-- 9:16 Tag on screen -->
+    <rect x="-60" y="70" width="120" height="24" rx="6" fill="rgba(0,0,0,0.7)"/>
+    <text x="0" y="86" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#34D399" text-anchor="middle" letter-spacing="1">9:16 VERTICAL</text>
+  </g>
+
+  <!-- Title Badge -->
+  <g transform="translate(60, 50)">
+    <rect width="320" height="74" rx="14" fill="#021C15" stroke="#10B981" stroke-width="1.5"/>
+    <text x="24" y="32" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#34D399" letter-spacing="3">PRODUCCIÓN AUDIOVISUAL</text>
+    <text x="24" y="58" font-family="system-ui, sans-serif" font-size="20" font-weight="800" fill="#FFFFFF">Reels & Vídeos Verticales</text>
+  </g>
+</svg>

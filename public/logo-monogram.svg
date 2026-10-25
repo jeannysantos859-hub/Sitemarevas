@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%" fill="none">
+  <!-- Monogram M: Left Black Stem, Right Emerald Stem -->
+  <g transform="translate(-210, -150)">
+    <!-- Left Black Stem & Diagonal -->
+    <path
+      d="M270 210 V460 H302 V285 L470 455 H495 L300 250 H270 Z"
+      fill="#1A1A1A"
+    />
+    <path
+      d="M270 210 H302 V460 H270 Z"
+      fill="#1A1A1A"
+    />
+    <path
+      d="M298 238 L488 448 L465 470 L275 260 Z"
+      fill="#1A1A1A"
+    />
+
+    <!-- Right Dark Green Diagonal & Vertical Stem -->
+    <path
+      d="M530 210 L430 318 L448 338 L548 230 Z"
+      fill="#064E3B"
+    />
+    <path
+      d="M548 210 H516 V232 L430 326 L448 344 L516 270 V480 H548 V210 Z"
+      fill="#064E3B"
+    />
+  </g>
+</svg>

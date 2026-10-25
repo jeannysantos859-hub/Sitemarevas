@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1280" width="100%" height="100%">
+  <defs>
+    <linearGradient id="clinic-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#0F2820"/>
+      <stop offset="50%" stopColor="#0B382A"/>
+      <stop offset="85%" stopColor="#064E3B"/>
+      <stop offset="100%" stopColor="#031E17"/>
+    </linearGradient>
+    <linearGradient id="cyan-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#5EEAD4"/>
+      <stop offset="100%" stopColor="#0D9488"/>
+    </linearGradient>
+    <linearGradient id="glass-card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#FFFFFF" stop-opacity="0.15"/>
+      <stop offset="100%" stopColor="#FFFFFF" stop-opacity="0.03"/>
+    </linearGradient>
+    <filter id="clinic-blur">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Clinic Atmosphere -->
+  <rect width="720" height="1280" fill="url(#clinic-bg)"/>
+
+  <!-- High-tech aesthetic lighting curves -->
+  <circle cx="560" cy="400" r="260" fill="#2DD4BF" opacity="0.08" filter="url(#clinic-blur)"/>
+  <circle cx="160" cy="700" r="300" fill="#14B8A6" opacity="0.06" filter="url(#clinic-blur)"/>
+
+  <!-- Modern Aesthetics Medical Suite Equipment Mockup -->
+  <g transform="translate(360, 520)">
+    <!-- Treatment Bed Silhouette -->
+    <path d="M-220 80 Q -100 60 0 75 Q 120 90 220 70 L240 110 L-240 110 Z" fill="#134E4A" opacity="0.8"/>
+    <ellipse cx="-160" cy="55" rx="55" ry="25" fill="#2DD4BF" opacity="0.3"/> <!-- Headrest -->
+
+    <!-- High-tech Ultrasound / Laser Device Console -->
+    <rect x="80" y="-120" width="140" height="190" rx="20" fill="url(#glass-card)" stroke="#5EEAD4" stroke-opacity="0.5" stroke-width="2"/>
+    <rect x="95" y="-105" width="110" height="70" rx="8" fill="#042F2E"/>
+    <path d="M105 -70 Q 120 -85 150 -60 Q 180 -90 195 -65" fill="none" stroke="#2DD4BF" stroke-width="2"/> <!-- Screen waveform -->
+    <circle cx="150" cy="20" r="16" fill="url(#cyan-glow)"/>
+
+    <!-- Handpiece Wand cable curve -->
+    <path d="M80 30 C 20 60, -40 20, -80 30" fill="none" stroke="#5EEAD4" stroke-width="5" stroke-linecap="round"/>
+    <rect x="-120" y="20" width="45" height="18" rx="6" fill="#CCFBF1"/>
+  </g>
+
+  <!-- Big Clinic Brand Badge -->
+  <g transform="translate(360, 240)">
+    <rect x="-190" y="-40" width="380" height="80" rx="16" fill="#042F2E" stroke="#2DD4BF" stroke-width="2" filter="url(#clinic-blur)"/>
+    <text x="0" y="8" font-family="system-ui, sans-serif" font-size="28" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="3">ULTRAFORMA</text>
+    <text x="0" y="26" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#5EEAD4" text-anchor="middle" letter-spacing="2">CLÍNICA DE ESTÉTICA AVANZADA</text>
+  </g>
+
+  <!-- Play Circle Center Overlay -->
+  <g transform="translate(360, 640)" filter="url(#clinic-blur)">
+    <circle cx="0" cy="0" r="64" fill="#0D9488" fill-opacity="0.9" stroke="#FFFFFF" stroke-width="3"/>
+    <polygon points="-12,-24 24,0 -12,24" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Top Reel UI overlay -->
+  <rect x="0" y="0" width="720" height="180" fill="black" opacity="0.4"/>
+  <g transform="translate(48, 64)">
+    <rect width="210" height="42" rx="21" fill="rgba(0,0,0,0.6)" stroke="rgba(255,255,255,0.2)"/>
+    <circle cx="21" cy="21" r="7" fill="#2DD4BF"/>
+    <text x="42" y="26" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" letter-spacing="1">REELS 9:16</text>
+  </g>
+
+  <!-- Bottom Campaign Info -->
+  <g transform="translate(48, 980)">
+    <rect width="180" height="38" rx="8" fill="#0F766E" stroke="#5EEAD4" stroke-width="1.5"/>
+    <text x="90" y="24" font-family="system-ui, sans-serif" font-size="13" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">ULTRAFORMA</text>
+
+    <text x="0" y="80" font-family="system-ui, sans-serif" font-size="34" font-weight="900" fill="#FFFFFF">Procedimientos Faciales</text>
+    <text x="0" y="120" font-family="system-ui, sans-serif" font-size="22" font-weight="600" fill="#5EEAD4">Tecnología & Bienestar Médico</text>
+    <text x="0" y="156" font-family="system-ui, sans-serif" font-size="16" font-weight="400" fill="#D1D5DB">Contenido visual para el sector de la medicina estética</text>
+  </g>
+
+  <!-- Sound Badge -->
+  <g transform="translate(48, 1190)">
+    <rect width="320" height="36" rx="18" fill="rgba(0,0,0,0.6)"/>
+    <text x="24" y="23" font-family="system-ui, sans-serif" font-size="13" font-weight="500" fill="#FFFFFF">🎵 Tratamientos & Salud · Ultraforma</text>
+  </g>
+</svg>

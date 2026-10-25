@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%" fill="none">
+  <!-- Official Marevas MKT Monogram -->
+  <g id="monogram">
+    <!-- Left Black Stem & Diagonal -->
+    <path
+      d="M270 210 V460 H302 V285 L470 455 H495 L300 250 H270 Z"
+      fill="#1A1A1A"
+    />
+    <path
+      d="M270 210 H302 V460 H270 Z"
+      fill="#1A1A1A"
+    />
+    <path
+      d="M298 238 L488 448 L465 470 L275 260 Z"
+      fill="#1A1A1A"
+    />
+
+    <!-- Right Dark Green Diagonal & Vertical Stem -->
+    <path
+      d="M530 210 L430 318 L448 338 L548 230 Z"
+      fill="#064E3B"
+    />
+    <path
+      d="M548 210 H516 V232 L430 326 L448 344 L516 270 V480 H548 V210 Z"
+      fill="#064E3B"
+    />
+  </g>
+
+  <!-- Typography: M Λ R E V Λ S -->
+  <g id="brand-name" fill="#064E3B">
+    <!-- M -->
+    <path d="M190 560 V510 H204 L218 538 L232 510 H246 V560 H234 V526 L222 550 H214 L202 526 V560 H190 Z" />
+    <!-- Λ (A without bar) -->
+    <path d="M260 560 L278 510 H292 L310 560 H297 L285 525 L273 560 H260 Z" />
+    <!-- R -->
+    <path d="M330 560 V510 H354 C366 510 374 516 374 526 C374 534 368 539 360 541 L375 560 H361 L347 543 H342 V560 H330 Z M342 533 H353 C358 533 362 531 362 526 C362 521 358 520 353 520 H342 V533 Z" />
+    <!-- E -->
+    <path d="M396 560 V510 H432 V520 H408 V530 H428 V539 H408 V550 H433 V560 H396 Z" />
+    <!-- V -->
+    <path d="M452 510 H465 L478 548 L491 510 H504 L485 560 H471 L452 510 Z" />
+    <!-- Λ (A without bar) -->
+    <path d="M524 560 L542 510 H556 L574 560 H561 L549 525 L537 560 H524 Z" />
+    <!-- S -->
+    <path d="M600 550 C603 557 610 561 618 561 C627 561 633 556 633 550 C633 543 627 540 617 537 C602 533 594 528 594 518 C594 509 603 502 616 502 C627 502 636 507 639 515 L628 520 C626 515 621 512 616 512 C609 512 605 515 605 519 C605 524 610 527 619 530 C634 534 644 539 644 550 C644 560 634 570 618 570 C605 570 594 563 590 552 L600 550 Z" />
+  </g>
+
+  <!-- M K T with horizontal framing lines -->
+  <g id="mkt-line">
+    <line x1="150" y1="615" x2="310" y2="615" stroke="#064E3B" stroke-width="2.5" />
+    
+    <!-- M K T Text -->
+    <g fill="#064E3B">
+      <!-- M -->
+      <path d="M365 628 V598 H373 L381 614 L389 598 H397 V628 H390 V607 L383 621 H379 L372 607 V628 H365 Z" />
+      <!-- K -->
+      <path d="M415 628 V598 H422 V610 L434 598 H444 L429 612 L445 628 H435 L422 615 V628 H415 Z" />
+      <!-- T -->
+      <path d="M455 605 H466 V628 H473 V605 H484 V598 H455 V605 Z" />
+    </g>
+
+    <line x1="520" y1="615" x2="680" y2="615" stroke="#064E3B" stroke-width="2.5" />
+  </g>
+
+  <!-- Slogan: VIDEOS · ESTRATEGIAS · CONTENIDOS · RESULTADOS -->
+  <text
+    x="400"
+    y="675"
+    text-anchor="middle"
+    fill="#064E3B"
+    font-family="'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif"
+    font-size="14.5"
+    font-weight="600"
+    letter-spacing="4.5"
+  >VIDEOS · ESTRATEGIAS · CONTENIDOS · RESULTADOS</text>
+</svg>

@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-dark-green: #064E3B;
+    --color-natural-green: #2F5E4E;
+    --color-light-grey: #E5E7EB;
+    --color-white: #FFFFFF;
+    --color-pale-green: #DCE5E0;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #064E3B;
+    background-color: #FFFFFF;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Space Grotesk', 'Plus Jakarta Sans', sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom wave animation */
+@keyframes waveFlow {
+  0% {
+    transform: translateX(0) translateZ(0) scaleY(1);
+  }
+  50% {
+    transform: translateX(-25%) translateZ(0) scaleY(1.08);
+  }
+  100% {
+    transform: translateX(-50%) translateZ(0) scaleY(1);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.05);
+  }
+}
+
+.animate-wave {
+  animation: waveFlow 24s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+}
+
+.animate-glow {
+  animation: pulseGlow 8s ease-in-out infinite;
+}
+
+/* Hide scrollbars for reels carousel */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

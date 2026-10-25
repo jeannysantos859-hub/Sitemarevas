@@ -1,0 +1,6 @@
+{
+  "name": "Marevas MKT",
+  "description": "Agencia creativa especializada en estrategia, creación de contenido, fotografía móvil y producción de Reels para marcas y negocios.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
